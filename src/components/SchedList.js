@@ -11,6 +11,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import AddCourse from './AddCourse';
+import AddStudent from './AddStudent';
 
 // NOTE:  for OAuth security, http request must have
 //   credentials: 'include' 
@@ -125,6 +126,7 @@ class SchedList extends Component {
     })
   } 
 
+
   render() {
      const columns = [
       { field: 'title', headerName: 'Title', width: 400 },
@@ -175,8 +177,7 @@ class SchedList extends Component {
             </Grid>
             <div style={{ height: 400, width: '100%' }}>
               <DataGrid rows={this.state.courses} columns={columns} />
-            </div>
-            <ToastContainer autoClose={1500} />   
+            </div>  
           </div>
       </div>
       ); 
