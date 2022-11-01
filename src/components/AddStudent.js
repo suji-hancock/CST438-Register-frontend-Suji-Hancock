@@ -34,7 +34,7 @@ class AddStudent extends React.Component {
         const { name, email, statusCode} = this.state;
         return (
             <div>
-                <Button variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen}>
+                <Button id="addSbutton" variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen}>
                 Add Student
                 </Button>
 
